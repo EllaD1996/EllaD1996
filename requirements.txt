@@ -8,8 +8,12 @@ matplotlib
 seaborn
 scikit-learn
 selenium
+colorama
 
 # API
 fastapi         # API framework
 pytz            # time zone management
 uvicorn         # web server
+
+# MODEL
+mlflow~=1.26.1
