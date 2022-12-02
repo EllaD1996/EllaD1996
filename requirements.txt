@@ -8,3 +8,8 @@ matplotlib
 seaborn
 scikit-learn
 selenium
+
+# API
+fastapi         # API framework
+pytz            # time zone management
+uvicorn         # web server
