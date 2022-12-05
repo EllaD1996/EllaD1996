@@ -1,18 +1,9 @@
-pytest
-pylint
-ipdb
-jupyterlab
-numpy
-pandas
-matplotlib
-seaborn
+# Machine Learning
 scikit-learn
-selenium
-colorama
+
 
 # API
 fastapi         # API framework
-pytz            # time zone management
 uvicorn         # web server
 
 # MODEL

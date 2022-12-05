@@ -1,6 +1,7 @@
-#FROM python:3.10.6-buster
-#COPY selector selector
-#COPY requirements.txt requirements.txt
-#COPY setup.py setup.py
-#RUN pip install .
-#CMD uvicorn taxifare.api.fast:app --host 0.0.0.0
+FROM tensorflow/tensorflow:2.10.1
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+COPY selector selector
+COPY setup.py setup.py
+RUN pip install -e .
+CMD uvicorn selector.api.fast_api:app --host 0.0.0.0 --port $PORT
