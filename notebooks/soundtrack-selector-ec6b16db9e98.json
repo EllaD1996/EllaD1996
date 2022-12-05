@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "soundtrack-selector",
+  "private_key_id": "ec6b16db9e9857da90d16bee218863cb28b5df07",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCzQLb6bWYukN3p\nwpGrtAmUhvamwkGDEClv3gFQl8IuA8ehbSLO1Q12rfShqYaAu4QpYYwBlwoiB+3M\nz0BE45Z2VSUo6gQ+txbav0xCG74/SrFbmPXnEG9uvTQL0wjNg3xUXygD3HsM4wkV\n4wlTa6TfoXB/4y6i7Qv/0jvW/K4prSCUuKZZzOa5RQz7TQu+bJ3q5BoZ7wUg+McE\nvkrBU69PLPYaDZjX7KIqm6dyvZPPqOGZ4MIRRVQoL0qsGsaldCdCrzVxjqkDNmD0\nUDOv7CuxBV73jaVVbyedukzHrbJ35cHQ39vnYazBuPtuBTD9XawsW76C0PpusksQ\n10tcKxC3AgMBAAECggEABBfXtcs2uJx9PL/BJMsVJuuYCUHJTi1ZzOCkZgs5F2Tl\ns5Vy5Icv6gRZ4DEnTZw6jdlY4ZZp2FIXB4S6Anix8FzMXu1NEIOMxYz1uFK62uYh\nO6a4AsE40i4G2LhGbK7ycVjE6KWpt6cdh37qMRn1p1ef4oO1BmpkSkCqNiQJ9BCi\npu8zETUR4UpFqvNRKGuhsC1IHU9gjG4eSOoxWZwLgPQpJ6LlweESyOWgKhbfQvjd\nMEEBpqGvBAjoYOv0kffSnsFhMpvRbVI2o7LkVX1riO2pYeYQ9wK96i0COw36QdYM\nZDjVjUKlewrF3Tdw2eLgILxlG6HzMMGD4OlfVM2ZnQKBgQDtFjcOKHYszWvoog/0\nf+6NC4n0ZDtbGzOgx089zaViNAORmrlCPo+CMGFv/lcnC28dC4x7j68FaCuDYG8r\nRzCYzDEU5iBOcbi8YbY6f9criyT6qyDhM4nO8mUcuJdOtDWBV6tIQBjvp0EBYsUa\nBnOkSj2ikyYEJGR8SoRhEfewHQKBgQDBjWoSmzR/hrjnPXFrHHyB+tA36Z8pEmaD\nYTC8wX2y+dx62y7OubljClKrJNkmZkn918TEePoDh32XmO9ZsSnhrEr8iYvxKv+S\n98gR7VKqYmZ0SGnhoMqWWkK6hqB41l4v1XTvq7KsOJ5Pv+3hiTjjxPJts3FX2RvV\nX45Rq0rT4wKBgQDGzxYjvTI7p5aRYTTX5l93zvFECrjrUQgeDoQYY1YH324Orxwi\nvKtClKdgbntOtnvac1C+XGJ7ujqi1D7kn7HUr4WI7OCyZxJuhdF1hLY+QVQlD1Nn\nBPzOmNzJFNFsohkr+QQcdgNzE2Gjc9usUzSt08OTjKkYWBwbTbFsZNC60QKBgQCi\nNW3MIh6hMbsMsMW4yqreE+EkuroUpcMcH/vEdTRvJk/M9pwHzEa95gzaOYtzTw57\nmrThI7ID+y0aO6V8Oamr48UEWBHcD/kYpmgZ/hbljInosjdqTGL8FrENuX4LRzyw\nQeg6ZF7dTqX+mA84kNQIrymtHlHDGcTl0atobnHLmQKBgBveakmqRy6w46XJ4DPt\nXv0/Xz8zV47gS5c2hrCZIEDK97k9CbTvutENC30wEZP49JtiPx7U2maMslJAzkyS\neYhVVpYM414U+s49AdZdZnOIfPGG0LNEs9J4OomGvzU78iZiCoVEFCekEK02npPc\nO8JChC79sYLJE6qc9ftyyn37\n-----END PRIVATE KEY-----\n",
+  "client_email": "bucket-editor@soundtrack-selector.iam.gserviceaccount.com",
+  "client_id": "103624172833980871593",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bucket-editor%40soundtrack-selector.iam.gserviceaccount.com"
+}
