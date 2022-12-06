@@ -1,11 +1,13 @@
 # Machine Learning
 scikit-learn==1.0.2
-
+#tensorflow==2.10.1
+python-multipart
 
 # API
 fastapi         # API framework
 uvicorn         # web server
 
 # MODEL
-mlflow~=1.26.1
+mlflow==1.26.1
 python-dotenv
+Pillow
