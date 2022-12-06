@@ -1,5 +1,5 @@
 # Machine Learning
-scikit-learn
+scikit-learn==1.0.2
 
 
 # API
@@ -8,3 +8,4 @@ uvicorn         # web server
 
 # MODEL
 mlflow~=1.26.1
+python-dotenv

@@ -6,9 +6,11 @@ from selector.ml_logic.proprocessor import user_image_reshape
 import numpy as np
 import os
 
+from PIL import Image
+
 
 app = FastAPI()
-app.state.models  = load_model()
+m_enc, m_nn  = load_model()
 
 
 app.add_middleware(
@@ -22,15 +24,16 @@ app.add_middleware(
 
 @app.post("/predict")
 async def predict_image(image: Request):
+    global m_enc
+    global m_nn
 
     data = await image.json()
-    data = np.array(data)
-    m_enc, m_nn = app.state.models
-
+    data = np.array(eval(data))
     #PREPROCESSING
     data = user_image_reshape(data)
+    print(data.shape)
     #ENCODER PREDICT
     image_encode = m_enc.predict(data)
     #NN PREDICT
     indices = m_nn.kneighbors(image_encode)[1]
-    return indices
+    return {"idx":list(indices)}

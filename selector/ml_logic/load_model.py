@@ -2,6 +2,10 @@ import os
 import mlflow
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Input
+from dotenv import load_dotenv, find_dotenv
+
+env_path = find_dotenv()
+load_dotenv(env_path)
 
 
 def load_model():
@@ -11,19 +15,10 @@ def load_model():
     stage = "Production"
 
     # load encoder model from mlflow
-    mlflow.set_tracking_uri(os.environ.get("MLFLOW_TRACKING_URI"))
+    mlflow.set_tracking_uri(os.getenv("MLFLOW_TRACKING_URI"))
 
-    mlflow_autoencoder = os.environ.get("MLFLOW_MODEL_NAME_AUTOENCODER")
-    mlflow_nn = os.environ.get("MLFLOW_MODEL_NAME_NN")
-
-    # ENCODER
-    IMAGE_HEIGHT = os.environ.get("IMAGE_HEIGHT")
-    IMAGE_LENGTH = os.environ.get("IMAGE_LENGTH")
-    CHANNELS = os.environ.get("CHANNELS")
-
-
-    model_uri_autoenc = f"models:/{mlflow_autoencoder}/{stage}"
-    model_uri_nn = f"models:/{mlflow_nn}/{stage}"
+    model_uri_autoenc = 'models:/soundtrack_selector_autoencoder/Production'
+    model_uri_nn = 'models:/soundtrack_selector_nn/Production'
 
     # load near neighboard model from mlflow
 
@@ -35,13 +30,13 @@ def load_model():
         model_nn = mlflow.sklearn.load_model(model_uri=model_uri_nn)
         #AUTOENCODER
         model_enc = Sequential([
-            Input((IMAGE_HEIGHT, IMAGE_LENGTH, CHANNELS)),
+            Input((100, 100, 3), name="REAL_INPUT"),
             model_autoenc.layers[0],
             model_autoenc.layers[1]
         ])
         print("\n✅ Encouder and NN models loaded from mlflow")
     except:
         print(f"\n❌ no model in stage {stage} on mlflow")
-        return None
+        raise Exception("No models")
 
     return model_enc, model_nn
